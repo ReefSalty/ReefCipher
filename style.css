@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+textarea, input, button {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    max-width: 100%; /* Limit maximum width to the parent container's width */
+    /* ... other existing styles ... */
+}
+
+button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#outputText {
+    background-color: #f9f9f9;
+    border: 1px solid #d4d4d4;
+    color: #333;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ... Your existing styles ... */
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.danger {
+    background-color: #dc3545;
+}
+
+button.danger:hover {
+    background-color: #c82333;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button#encryptBtn {
+    background-color: #28a745; /* Encrypt button color */
+}
+
+button#decryptBtn {
+    background-color: #17a2b8; /* Decrypt button color */
+}
+
+button#encryptBtn:hover {
+    background-color: #218838;
+}
+
+button#decryptBtn:hover {
+    background-color: #138496;
+}
+
+/* Style the container for the slider and its value */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Styling for the range slider */
+input[type=range] {
+    -webkit-appearance: none;
+    width: 80%;
+    margin: 0;
+    background: transparent;
+}
+
+/* Styling for the slider's track */
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Styling for the slider's thumb */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #007BFF;
+    margin-top: -4px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #007BFF;
+}
+
+/* Styling for the slider's value display */
+#shiftValue {
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Additional styles for focused state */
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: #ccc;
+}
+
+#howToUse {
+    background-color: #f9f9f9;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    list-style-position: inside; /* Ensures numbers are outside the content box */
+}
+
+#howToUse li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    padding-left: 10px; /* Adds padding to align text if necessary */
+}
+
+#toggleInstructionsBtn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#toggleInstructionsBtn:hover {
+    background-color: #0056b3;
+}
+
+#toggleInstructionsBtn span {
+margin-right: 5px;
+}
+
+

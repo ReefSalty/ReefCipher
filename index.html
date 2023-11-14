@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reef Cipher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1>Reef Cipher Encrypter/Decrypter</h1>
+        <textarea id="inputMessage" placeholder="Enter your message"></textarea>
+        <textarea id="inputKey" placeholder="Enter your key (for decryption) or leave blank (for encryption)"></textarea>
+        <div class="button-container">
+            <button id="encryptBtn"><i class="fas fa-lock"></i> Encrypt</button>
+            <button id="decryptBtn"><i class="fas fa-unlock"></i> Decrypt</button>
+            <button id="clearBtn" class="danger"><i class="fas fa-trash"></i> Clear All</button>
+        </div>
+        <textarea id="outputText" readonly></textarea>
+        <button id="exportBtn"><i class="fas fa-file-download"></i> Export as Text File</button>
+    </div>
+
+    <div class="container">
+        <h1>How to Use the Reef Cipher Tool</h1>
+        <button id="toggleInstructionsBtn"><span id="toggleIcon" class="fas fa-chevron-down"></span> Show Instructions</button>
+        <ol id="howToUse">
+            <li>Enter the text you want to encrypt or decrypt in the first box.</li>
+            <li>To encrypt, leave the key box empty. To decrypt, enter the key in the key box.</li>
+            <li>Click "Encrypt" to encrypt your text or "Decrypt" to decrypt it.</li>
+            <li>The result will appear in the output area below.</li>
+            <li>Use the "Export as Text File" button to download the result and key.</li>
+        </ol>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
